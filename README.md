@@ -53,7 +53,7 @@ npm install
 cd ../live-chat-client
 npm install
 
-3. **Environment Configuration**
+3. #Environment Configuration
 
 Create a .env file in the live-chat-server directory with the following content:
 
@@ -61,7 +61,7 @@ MONGO_URI=<<paste the url>>
 JWT_SECRET=<<set a jwt key>>
 PORT=8080
 
-5. **For the Backend Server**:
+5. #For the Backend Server**:
 
 # Navigate to the backend directory
 cd live-chat-server
