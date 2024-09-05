@@ -104,3 +104,21 @@ npm run start
 # Start the Frontend:
 cd ../live-chat-client
 npm start
+
+**Installed Dependencies**
+#Backend Dependencies:
+>express: For handling HTTP requests
+>socket.io: For real-time communication
+>mongoose: For MongoDB interactions
+>bcrypt: For password encryption
+>jsonwebtoken: For creating and validating JWT tokens
+>dotenv: For managing environment variables
+>cors: For handling Cross-Origin Resource Sharing (CORS)
+>Frontend Dependencies:
+>react: For building the user interface
+>redux: For state management
+>@mui/material: For UI components
+>axios: For making HTTP requests to the backend
+>socket.io-client: For real-time communication with the backend
+>@reduxjs/toolkit: For simplifying Redux setup
+>framer-motion: For adding animations
