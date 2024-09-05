@@ -36,74 +36,39 @@ Before running this app, make sure you have the following installed:
 - **MongoDB** 
 
 ### **Steps to Run Locally**
+# 1. Clone the repository:
+git clone https://github.com/saloni210804/live-chat-app.git
+cd live-chat-app
 
-1. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/saloni210804/live-chat-app.git
-   cd live-chat-app
-
-2. **Install dependencies for both client and server**:
-
-Navigate to the server and client directory and install the dependencies:
-
+# 2. Install dependencies for both client and server:
+# Navigate to the server directory
 cd live-chat-server
 npm install
 
+# Navigate to the client directory
 cd ../live-chat-client
 npm install
 
-3. # Environment Configuration
+# 3. Create an environment configuration for the backend:
+# Navigate to the server directory
+cd ../live-chat-server
+# Create a .env file with the following content:
+echo "MONGO_URI=<<paste the MongoDB URL here>>
+JWT_SECRET=<<set your JWT secret key>>
+PORT=8080" > .env
 
-Create a .env file in the live-chat-server directory with the following content:
-
-MONGO_URI=<<paste the url>>
-JWT_SECRET=<<set a jwt key>>
-PORT=8080
-
-5. # For the Backend Server:
-
-Navigate to the backend directory
-cd live-chat-server
-
-# Install backend dependencies
+# 4. Install backend dependencies:
 npm install express socket.io mongoose bcrypt jsonwebtoken dotenv cors
 
-express             # For handling HTTP requests
-jsonwebtoken        # For creating and validating JWT tokens
-bcrypt              # For password encryption and validation
-mongoose            # For interacting with MongoDB
-socket.io           # For enabling real-time messaging
-dotenv              # To manage environment variables securely
-
-
-6. **For Frontend/Client**
-
-# Navigate to the frontend directory
-cd ../live-chat-client
-
-# Install frontend dependencies
-npm install react react-dom redux react-redux @reduxjs/toolkit axios @mui/material @emotion/react @emotion/styled socket.io-client framer-motion
-
-react               # For building the user interface
-redux               # For state management
-@mui/material       # For building modern UI components
-axios               # For making API requests to the backend
-socket.io-client    # For real-time communication between client and server
-@reduxjs/toolkit    # Simplifies Redux setup
-
-7. **Run the application**
-
-# Start MongoDB 
-Connect via URL in .env
-MONGO_URI=<<URL>>
-
-# Start the Backend:
-cd live-chat-server
+# 5. Start the MongoDB server and Backend:
+# Make sure MongoDB is running and connected via the URL in the .env file
 npm run start
 
-# Start the Frontend:
-cd ../live-chat-client
+# 6. Navigate to the frontend directory and install frontend dependencies:
+cd live-chat-client
+npm install react react-dom redux react-redux @reduxjs/toolkit axios @mui/material @emotion/react @emotion/styled socket.io-client framer-motion
+
+# 7. Start the frontend server:
 npm start
 
 # Installed Dependencies**
