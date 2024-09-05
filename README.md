@@ -36,7 +36,7 @@ Before running this app, make sure you have the following installed:
 - **MongoDB** 
 
 ### **Steps to Run Locally**
-# 1. Clone the repository:
+#### 1. Clone the repository:
 git clone https://github.com/saloni210804/live-chat-app.git
 cd live-chat-app
 
