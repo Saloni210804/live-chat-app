@@ -8,6 +8,7 @@
 This is a real-time messaging application that allows users to engage in one-on-one or group chats. Built using **React** on the frontend and **Node.js/Express** on the backend, it leverages **Socket.io** for real-time communication and **MongoDB** for data persistence.
 
 ---
+System Design Document: https://drive.google.com/file/d/1idRnGfDEUXP1xOaT8v0BIFrzyBD91x-1/view?usp=sharing
 
 ## **Features**
 - User authentication (JWT-based).
