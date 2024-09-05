@@ -37,14 +37,16 @@ Before running this app, make sure you have the following installed:
 
 ### **Steps to Run Locally**
 #### 1. Clone the repository:
+```
 git clone https://github.com/saloni210804/live-chat-app.git
 cd live-chat-app
-
-# 2. Install dependencies for both client and server:
-# Navigate to the server directory
+```
+#### 2. Install dependencies for both client and server:
+Navigate to the server directory
+```
 cd live-chat-server
 npm install
-
+```
 # Navigate to the client directory
 cd ../live-chat-client
 npm install
