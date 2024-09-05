@@ -51,28 +51,36 @@ npm install
 cd ../live-chat-client
 npm install
 
-# 3. Create an environment configuration for the backend:
-# Navigate to the server directory
-cd ../live-chat-server
-# Create a .env file with the following content:
-echo "MONGO_URI=<<paste the MongoDB URL here>>
+####  3. Create an environment configuration for the backend:
+Navigate to the server directory
+```
+cd live-chat-server
+```
+Create a .env file with the following content:
+```
+MONGO_URI=<<paste the MongoDB URL here>>
 JWT_SECRET=<<set your JWT secret key>>
-PORT=8080" > .env
+PORT=8080
+```
 
-# 4. Install backend dependencies:
+####  4. Install backend dependencies:
+```
 npm install express socket.io mongoose bcrypt jsonwebtoken dotenv cors
-
-# 5. Start the MongoDB server and Backend:
-# Make sure MongoDB is running and connected via the URL in the .env file
+```
+#### 5. Start the MongoDB server and Backend:
+Make sure MongoDB is running and connected via the URL in the .env file
+```
 npm run start
-
-# 6. Navigate to the frontend directory and install frontend dependencies:
+```
+####  6. Navigate to the frontend directory and install frontend dependencies:
+```
 cd live-chat-client
 npm install react react-dom redux react-redux @reduxjs/toolkit axios @mui/material @emotion/react @emotion/styled socket.io-client framer-motion
-
-# 7. Start the frontend server:
+```
+####  7. Start the frontend server:
+```
 npm start
-
+```
 # Installed Dependencies**
 **Backend Dependencies:**
 - express: For handling HTTP requests
