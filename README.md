@@ -47,10 +47,11 @@ Navigate to the server directory
 cd live-chat-server
 npm install
 ```
-# Navigate to the client directory
+Navigate to the client directory
+```
 cd ../live-chat-client
 npm install
-
+```
 ####  3. Create an environment configuration for the backend:
 Navigate to the server directory
 ```
